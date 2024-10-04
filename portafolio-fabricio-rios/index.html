@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="https://www.instagram.com/fabri_rios03/" target="_blank">Fabri</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.jpg" alt="">
+            </div>
+            <h1>Rios Fabricio</h1>
+            <h2>Analista - Programador</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/fabricio.rios.7370/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/fabricio-exequiel-rios-697b1a328/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/fabri_rios03/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/fabricioriosexe"><i class="fa-brands fa-github"></i></a>  
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Fabricio Rios.</span> Soy un estudiante de programación con sólidos conocimientos en Java y sus tecnologías asociadas, así como en HTML, CSS, JavaScript y MySQL. Me considero una persona dedicada y apasionada por el aprendizaje continuo. Disfruto no solo de adquirir nuevos conocimientos, sino también de compartirlos y ayudar a otros en su proceso de aprendizaje.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            01-03-2003
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +54 3764851918
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            fabricioriosssss@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Misiones, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://github.com/fabricioriosexe/LoopChat" target="_blank">
+                    <img src="img/LOOPCHAT.png" alt="">
+                    <div class="overlay">
+                        <h3>Loop Chat</h3>
+                        <p>Mensajeria Instantanea</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/fabricioriosexe/i-book" target="_blank">
+                    <img src="img/ibook.png" alt="">
+                    <div class="overlay">
+                        <h3>I-Book</h3>
+                        <p>Biblioteca</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/fabricioriosexe/EjerciciosJava/tree/main/zona_Fit" target="_blank">
+                    <img src="img/zona fit.png" alt="">
+                    <div class="overlay">
+                        <h3>Zona Fit</h3>
+                        <p>control stock</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/fabricioriosexe/EjerciciosJava/tree/main/Sanatorio" target="_blank">
+                    <img src="img/sanatorio.png" alt="">
+                    <div class="overlay">
+                        <h3>Sanatorio</h3>
+                        <p>Java</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/fabricioriosexe/EjerciciosJava/tree/main/Calculadora" target="_blank">
+                    <img src="img/calculadora.png" alt="">
+                    <div class="overlay">
+                        <h3>Calculadora</h3>
+                        <p>Java</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/fabricioriosexe" target="_blank"></a>
+                    <img src="img/lista de tareas.png" alt="">
+                    <div class="overlay">
+                        <h3>Lista de tareas</h3>
+                        <p>Java</p>
+                    </div>
+                </a>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/Ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Misiones, Argentina
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 3764 - 851918 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: fabricioriosssss.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/fabricio.rios.7370/"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/FabriRioss"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/fabricio-exequiel-rios-697b1a328/"><i class="fa-brands fa-linkedin-in"></i></a>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
